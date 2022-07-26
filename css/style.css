@@ -10,6 +10,11 @@ body {
     font-family: sans-serif;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 /* ----- UTILITY ----- */
 
@@ -20,7 +25,17 @@ body {
 /* ----- DEBUG -----*/
 
 .debug {
-    height: 500px;
+    height: 200px;
     background-color: aqua;
     border: 1px dashed black;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+header .debug {
+    background-color: blue;
+}
+
+footer .debug {
+    background-color: grey;
 }
