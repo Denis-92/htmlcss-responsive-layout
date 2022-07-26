@@ -45,6 +45,10 @@ img {
     flex-direction: column;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 /* ---------- */
 
 .box {
@@ -56,6 +60,9 @@ img {
     margin: 0 auto;
 }
 
+.w-50 {
+    width: 50%;
+}
 
 /* ----- CONTENT ----- */
 
@@ -84,9 +91,10 @@ header {
     font-size: 1.4rem;
 }
 
-#demo-application i {
+.feature-icon {
     font-size: 4rem;
     color: rgb(6 135 253);
+
 }
 
 #demo-application * {
@@ -95,6 +103,11 @@ header {
 
 #get-a-demo * {
     text-align: left;
+}
+
+#get-a-demo button {
+    width: auto;
+    display: inline-block;
 }
 
 /*-------------------*/
@@ -136,3 +149,24 @@ header {
 footer {
     background-color: grey;
 }
+
+/*--------------------------*/
+
+
+/*/////////////////\\\\\\\\\\\\\\\\\\
+//---------- MEDIA QUERY ----------*/
+
+@media screen and (min-width: 810px) {
+
+    #demo-application .box:not(:first-child) {
+        width: calc(100% / 3);
+    }
+
+    #get-a-demo {
+        width: calc(100% / 1.5);
+    }
+
+}
+
+
+@media screen and (min-width: 1920px) {}
