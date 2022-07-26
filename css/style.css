@@ -76,12 +76,25 @@ header {
     background-color:
         rgb(181 221 255);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #demo-application h2 {
     color: rgb(6 135 253);
     font-size: 1.4rem;
-    padding: 30px 0;
+}
+
+#demo-application i {
+    font-size: 4rem;
+    color: rgb(6 135 253);
+}
+
+#demo-application * {
+    margin-top: 20px;
+}
+
+#get-a-demo * {
+    text-align: left;
 }
 
 /*-------------------*/
