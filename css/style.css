@@ -123,17 +123,3 @@ header {
 footer {
     background-color: grey;
 }
-
-/* ----- DEBUG -----*/
-
-.debug {
-    height: 200px;
-    background-color:
-        rgba(0, 255, 255, 0.5);
-    border: 1px dashed black;
-    margin: 10px 0;
-}
-
-.box {
-    border: 0;
-}
