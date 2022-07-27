@@ -129,7 +129,7 @@ header {
 
 #get-a-demo button {
     width: auto;
-    display: inline-block;
+    margin-top: 0;
 }
 
 /*-------------------*/
@@ -205,7 +205,7 @@ footer {
     }
 
     #benefits .box {
-        width: calc(100% / 3 - 20px);
+        width: calc(50% - 20px);
         padding: 0 20px;
         margin: 10px;
     }
@@ -222,4 +222,15 @@ footer {
     .nav-menu {
         display: inline;
     }
+
+    #demo-application .column {
+        flex-direction: row;
+    }
+
+    #benefits .box {
+        width: calc(100% / 3 - 20px);
+        padding: 0 20px;
+        margin: 10px;
+    }
+
 }
