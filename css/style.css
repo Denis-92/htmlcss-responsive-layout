@@ -233,4 +233,18 @@ footer {
         margin: 10px;
     }
 
+    #strategic-planning .container {
+        display: flex;
+    }
+
+    #strategic-planning .big-box {
+        width: 60%;
+    }
+
+    #strategic-planning .box {
+        width: 40%;
+        height: 50%;
+        align-self: flex-end;
+    }
+
 }
