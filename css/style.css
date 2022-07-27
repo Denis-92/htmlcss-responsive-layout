@@ -15,6 +15,7 @@ body {
 .container {
     width: 83%;
     margin: 0 auto;
+    /*padding: 0 20px;*/
 }
 
 img {
@@ -79,6 +80,10 @@ header {
     color: white;
     font-size: 1.5rem;
     padding-top: 10px;
+}
+
+.nav-menu {
+    display: none;
 }
 
 /*---------------------*/
@@ -176,16 +181,28 @@ footer {
 @media screen and (min-width: 810px) {
 
     #demo-application .box:not(:first-child) {
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 20px);
+        padding: 0 20px;
+        margin: 10px;
     }
 
     #get-a-demo {
         width: calc(100% / 1.5);
     }
 
-    /* TODO: img a 50% ?? */
+    #demo-application img {
+        width: 50%;
+    }
 
 }
 
 
-@media screen and (min-width: 1920px) {}
+@media screen and (min-width: 1920px) {
+    #menu-header i {
+        display: none;
+    }
+
+    .nav-menu {
+        display: inline;
+    }
+}
