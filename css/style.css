@@ -204,6 +204,13 @@ footer {
         width: 50%;
     }
 
+    #benefits .box {
+        width: calc(100% / 3 - 20px);
+        padding: 0 20px;
+        margin: 10px;
+    }
+
+
 }
 
 
