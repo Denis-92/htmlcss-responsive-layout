@@ -9,7 +9,6 @@
 body {
     font-family: sans-serif;
     line-height: 1.7rem;
-    font-size: 0.9rem;
 }
 
 .container {
@@ -78,7 +77,6 @@ header {
 
 #menu-header {
     color: white;
-    font-size: 1.5rem;
     padding-top: 10px;
 }
 
@@ -86,7 +84,6 @@ header {
     display: none;
     color: white;
     text-decoration: none;
-    font-size: 1rem;
     padding: 10px;
 }
 
@@ -96,7 +93,7 @@ header {
     color: black;
 }
 
-/*---------------------*/
+/* DEMO APPLICATION */
 #demo-application .box {
     background-color:
         rgb(181 221 255);
@@ -106,7 +103,6 @@ header {
 
 #demo-application h2 {
     color: rgb(6 135 253);
-    font-size: 1.4rem;
 }
 
 #demo-application p {
@@ -114,7 +110,6 @@ header {
 }
 
 .feature-icon {
-    font-size: 4rem;
     color: rgb(6 135 253);
 
 }
@@ -133,6 +128,8 @@ header {
 }
 
 /*-------------------*/
+
+/* STRATEGIC PLANNING */
 #strategic-planning {
     background-color:
         rgb(151 146 228);
@@ -143,12 +140,22 @@ header {
     margin-bottom: 25px;
 }
 
+/*#strategic-planning button {
+    background-color:
+        rgb(151 146 228);
+    border-radius: 50%;
+    border: 0;
+}*/
+
 /*--------------------*/
+
+/* TESTIMONIALS */
 #testimonials .box {
     background-color:
         rgb(151 146 228);
     margin-bottom: 20px;
     text-align: center;
+    padding: 10px;
 }
 
 #testimonials img {
@@ -156,6 +163,7 @@ header {
     width: 30vw;
     height: 30vw;
     object-fit: cover;
+    padding: 10px;
 }
 
 /*----------------------*/
@@ -170,6 +178,15 @@ header {
 }
 
 /*-------------------------*/
+
+/* ABOUT US */
+
+#about-us img {
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+    object-fit: cover;
+}
 
 /*--------------------------*/
 #get-started {
@@ -204,10 +221,21 @@ footer {
         width: 50%;
     }
 
+    #testimonials .box img,
+    #testimonials .box p {
+        width: calc(50% - 20px);
+        display: inline-block;
+        text-align: left;
+    }
+
     #benefits .box {
         width: calc(50% - 20px);
         padding: 0 20px;
         margin: 10px;
+    }
+
+    #about-us .flex>* {
+        width: 50%;
     }
 
 
@@ -215,6 +243,11 @@ footer {
 
 
 @media screen and (min-width: 1200px) {
+
+    .container {
+        width: 60%;
+    }
+
     #menu-header i {
         display: none;
     }
@@ -225,6 +258,19 @@ footer {
 
     #demo-application .column {
         flex-direction: row;
+    }
+
+    #testimonials .box img {
+        height: 150px;
+        width: 150px;
+    }
+
+    #testimonials .box {
+        text-align: left;
+    }
+
+    #testimonials .box p {
+        width: 70%;
     }
 
     #benefits .box {
@@ -245,6 +291,13 @@ footer {
         width: 40%;
         height: 50%;
         align-self: flex-end;
+    }
+
+    #about-us img,
+    #about-us img+p {
+        width: 150px;
+        height: 150px;
+        margin-left: 30%;
     }
 
 }
