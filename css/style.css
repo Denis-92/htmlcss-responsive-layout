@@ -207,6 +207,10 @@ footer {
 
 @media screen and (min-width: 810px) {
 
+    .container {
+        width: 75%;
+    }
+
     #demo-application .box:not(:first-child) {
         width: calc(100% / 3 - 20px);
         padding: 0 20px;
